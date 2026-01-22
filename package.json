@@ -1,0 +1,11 @@
+{
+  "name": "docker-compose-monitoring",
+  "version": "1.0.0",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^5.2.1",
+    "pm2": "^6.0.14",
+    "prom-client": "^15.1.3",
+    "winston": "^3.19.0"
+  }
+}

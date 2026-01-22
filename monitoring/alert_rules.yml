@@ -1,0 +1,11 @@
+groups:
+  - name: my_app_alerts
+    rules:
+      - alert: AppDown
+        expr: up{job="my-app"} == 0
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Instancia de la aplicación caída"
+          description: "La app en el puerto 3000 no responde hace más de 1 minuto."

@@ -1,0 +1,7 @@
+route:
+  receiver: 'web.webhook'
+
+receivers:
+- name: 'web.webhook'
+  webhook_configs:
+  - url: 'http://example.com/alert' # Aquí iría tu webhook real (Slack/Discord)
